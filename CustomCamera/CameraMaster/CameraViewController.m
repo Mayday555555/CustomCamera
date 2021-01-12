@@ -53,6 +53,7 @@
 #pragma mark - Life Cycle
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    NSLog(@"CameraViewController Dealloc");
 }
 
 - (instancetype)initWithCameraMode:(CameraMode)cameraMode {

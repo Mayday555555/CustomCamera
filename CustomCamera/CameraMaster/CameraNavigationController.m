@@ -80,9 +80,9 @@
 //    takePicturesVC.takeImageBlock = _takeImageBlock;
 //}
 
-//- (void)setDataBlock:(void (^)(NSData * _Nullable, NSData * _Nullable))dataBlock {
-//    _dataBlock = [dataBlock copy];
-//    imagePickerVC.dataBlock = _dataBlock;
-//}
+- (void)setDataBlock:(void (^)(NSData * _Nullable, NSData * _Nullable))dataBlock {
+    _dataBlock = [dataBlock copy];
+    cameraVC.dataBlock = _dataBlock;
+}
 
 @end

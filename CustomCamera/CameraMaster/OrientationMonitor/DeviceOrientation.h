@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger,TgDirection) {
 @end
 @interface DeviceOrientation : NSObject
 
-@property(nonatomic,strong)id<DeviceOrientationDelegate>delegate;
+@property(nonatomic,assign)id<DeviceOrientationDelegate>delegate;
 
 - (instancetype)initWithDelegate:(id<DeviceOrientationDelegate>)delegate;
 /**
